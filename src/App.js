@@ -4,7 +4,7 @@ import LoginPage from "./components/LoginPage";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
-	const [userState, setUserState] = React.useState(true);
+	const [userState, setUserState] = React.useState(false);
 	const [state, setState] = React.useState({
 		animation: "push",
 		direction: "left",

@@ -20,6 +20,11 @@ function MainContainer(props) {
 			<h3>Dashboard</h3>
 		</Container>
 	);
+	const Ex = () => (
+		<Container className="test-container">
+			<h3>ex</h3>
+		</Container>
+	);
 
 	return (
 		<Router>
@@ -33,6 +38,7 @@ function MainContainer(props) {
 						<Route path="/" exact component={Home} />
 						<Route path="/invoice" component={Invoices} />
 						<Route path="/dashboard" component={Dashboard} />
+						<Route path="/ex" component={Ex} />
 					</Switch>
 				</div>
 			</div>
